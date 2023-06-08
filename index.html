@@ -25,18 +25,21 @@
       <div class="header-container container">
         <nav class="header-navigation">
           <a
-          class="logo-link link-active link"
-          href="./index.html"
-          target="_blank"
-          rel="noopener norefered nofollow"
-          >Web<span class="title-logo">Studio</span></a
+            class="logo-link header-menu-link-active link"
+            href="./index.html"
+            target="_blank"
+            rel="noopener norefered nofollow"
+            >Web<span class="title-logo">Studio</span></a
           >
-          <button type="button" class="header-navigation-mobile-menu js-open-menu">
-            <svg class="mobile-menu-icon" width="32" height="22">
+          <button
+            type="button"
+            class="header-navigation-mobile-menu js-open-menu"
+          >
+            <svg class="mobile-menu-icon" width="30" height="18">
               <use href="./images/icons.svg#icon-mobile-menu"></use>
             </svg>
           </button>
-          <ul class="header-menu visually-hidden list">
+          <ul class="header-menu list">
             <li class="list">
               <a
                 class="header-menu-item-link header-menu-link-studio link"
@@ -45,7 +48,7 @@
               >
             </li>
             <li class="list">
-              <a class="header-menu-item-link link" href="./portfolio.html"
+              <a class="header-menu-item-link link" href=""
                 >Portfolio</a
               >
             </li>
@@ -54,7 +57,7 @@
             </li>
           </ul>
         </nav>
-        <address class="header-contact-information visually-hidden">
+        <address class="header-contact-information">
           <ul class="contact-information list">
             <li class="list">
               <a
@@ -73,22 +76,23 @@
           </ul>
         </address>
       </div>
-      <div class="mobile-modal-window js-menu-container">
-        <button type="button" class="modal-window-btn js-close-menu">
-          <svg class="icon-close-btn" width="8" height="8">
-            <use href="./images/icons.svg#icon-close-btn"></use>
-          </svg>
-        </button>
-        <ul class="header-menu list">
+      <div class="mobile-modal-backdrop">
+        <div class="mobile-modal-window js-menu-container">
+          <button type="button" class="modal-window-btn js-close-menu">
+            <svg class="icon-close-btn" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-btn"></use>
+            </svg>
+          </button>
+          <ul class="header-menu-mobile list">
             <li class="list">
               <a
-                class="header-menu-item-link header-menu-link-studio link"
+                class="header-menu-item-link header-menu-link-active link"
                 href="./index.html"
                 >Studio</a
               >
             </li>
             <li class="list">
-              <a class="header-menu-item-link link" href="./portfolio.html"
+              <a class="header-menu-item-link link" href=""
                 >Portfolio</a
               >
             </li>
@@ -96,73 +100,57 @@
               <a class="header-menu-item-link link" href="">Contacts</a>
             </li>
           </ul>
-        </nav>
-        <address class="header-contact-information">
-          <div class="mobile-contact-information">
-            <ul class="contact-information list">
-              <li class="list">
-                <a
-                class="header-menu-item-link contact-info contact-info-tel link"
-                href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-                >
-              </li>
-              <li class="list">
-                <a
-                  class="header-menu-item-link contact-info contact-info-mail link"
-                  href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-            </ul>
-          </div>
-        </address>
-        <ul class="our-team-item-social-list list">
-          <li class="our-team-item-social-item list">
-            <a class="our-team-item-social-link" href="">
-              <svg
-                class="our-team-item-social-icon"
-                width="16"
-                height="16"
-              >
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="our-team-item-social-item list">
-            <a class="our-team-item-social-link" href="">
-              <svg
-                class="our-team-item-social-icon"
-                width="16"
-                height="16"
-              >
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="our-team-item-social-item list">
-            <a class="our-team-item-social-link" href="">
-              <svg
-                class="our-team-item-social-icon"
-                width="16"
-                height="16"
-              >
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="our-team-item-social-item list">
-            <a class="our-team-item-social-link" href="">
-              <svg
-                class="our-team-item-social-icon"
-                width="16"
-                height="16"
-              >
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+          <address class="header-contact-information-mobile">
+            <div class="mobile-contact-information">
+              <ul class="contact-information list">
+                <li class="list">
+                  <a
+                    class="header-menu-item-link contact-info contact-info-tel link"
+                    href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="list">
+                  <a
+                    class="header-menu-item-link contact-info contact-info-mail link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </address>
+          <ul class="our-team-item-social-list list">
+            <li class="our-team-item-social-item list">
+              <a class="our-team-item-social-link" href="">
+                <svg class="our-team-item-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="our-team-item-social-item list">
+              <a class="our-team-item-social-link" href="">
+                <svg class="our-team-item-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="our-team-item-social-item list">
+              <a class="our-team-item-social-link" href="">
+                <svg class="our-team-item-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="our-team-item-social-item list">
+              <a class="our-team-item-social-link" href="">
+                <svg class="our-team-item-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -178,7 +166,9 @@
       </section>
       <section class="main-section-article">
         <div class="container">
-          <h2 class="main-section-article-header">Our principles</h2>
+          <h2 class="main-section-article-header visually-hidden">
+            Our principles
+          </h2>
           <ul class="main-section-article-list list">
             <li class="article-item list">
               <div class="our-principles-item">
@@ -237,6 +227,7 @@
           <ul class="section-article-list list">
             <li class="section-article-list-item list">
               <img
+                srcset="./images/desctop-app@2x.jpg 2x"
                 src="./images/desctop-app.jpg"
                 alt="PC version of the site"
                 width="360"
@@ -245,6 +236,7 @@
             </li>
             <li class="section-article-list-item list">
               <img
+                srcset="./images/mobile-app@2x.jpg 2x"
                 src="./images/mobile-app.jpg"
                 alt="Adaptation of sites for mobile devices"
                 width="360"
@@ -253,6 +245,7 @@
             </li>
             <li class="section-article-list-item list">
               <img
+                srcset="./images/rectangle@2x.jpg 2x"
                 src="./images/rectangle.jpg"
                 alt="Site interface on a mobile device"
                 width="360"
@@ -268,6 +261,7 @@
           <ul class="main-section-our-team-list list">
             <li class="our-team-item-list list">
               <img
+                srcset="./images/mark_guerrero@2x.jpg 2x"
                 src="./images/mark_guerrero.jpg"
                 alt="Post photos of employees"
                 width="264"
@@ -326,6 +320,7 @@
             </li>
             <li class="our-team-item-list list">
               <img
+                srcset="./images/tom_ford@2x.jpg 2x"
                 src="./images/tom_ford.jpg"
                 alt="Photo of a company employee"
                 width="264"
@@ -384,6 +379,7 @@
             </li>
             <li class="our-team-item-list list">
               <img
+                srcset="./images/camila_garcia@2x.jpg 2x"
                 src="./images/camila_garcia.jpg"
                 alt="Photo of a company employee"
                 width="264"
@@ -442,6 +438,7 @@
             </li>
             <li class="our-team-item-list list">
               <img
+                srcset="./images/daniel_wilson@2x.jpg 2x"
                 src="./images/daniel_wilson.jpg"
                 alt="Photo of a company employee"
                 width="264"
@@ -648,9 +645,7 @@
             </div>
           </div>
           <div class="modal-form-wrapper">
-            <label for="user-phone" class="modal-form-lable">
-              Phone
-            </label>
+            <label for="user-phone" class="modal-form-lable"> Phone </label>
             <div class="input-wrapper">
               <input
                 id="user-phone"
@@ -698,20 +693,24 @@
               required
             />
             <label for="user-privacy" class="modal-form-lable-text">
-            <span class="modal-checkbox-icon">
+              <span class="modal-checkbox-icon">
                 <svg class="checkbox-icon" width="10" height="8">
-                  <use href="./images/icons.svg#icon-checkbox" class="checkbox-mark"></use>
+                  <use
+                    href="./images/icons.svg#icon-checkbox"
+                    class="checkbox-mark"
+                  ></use>
                 </svg>
               </span>
               I accept the terms and conditions of the
               <a class="modal-form-text-term-link" href="" target="_blank">
-                Privacy Policy</a>
+                Privacy Policy</a
+              >
             </label>
           </div>
           <button class="modal-form-btn" type="submit">Send</button>
         </form>
-        </div>
       </div>
+    </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
